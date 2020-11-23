@@ -24,7 +24,7 @@ public class MagicEightBall {
             String playAgain = "";
 
 
-            int generatedNumber = rand.nextInt(5); // Generate random integer [0, 4]
+            int generatedNumber = rand.nextInt(7); // Generate random integer [0, 4]
 
             System.out.println("I am the Magic 8 ball! Ask your question:"); // Welcome prompt
             question = scanner.nextLine(); // Stores user input
@@ -47,6 +47,12 @@ public class MagicEightBall {
                     break;
                 case 4:
                     System.out.println("Response: It looks promising.");
+                    break;
+                case 5:
+                    System.out.println("Response: The answer is not apparent. Try again.");
+                    break;
+                case 6:
+                    System.out.println("Response: It is a possibility.");
                     break;
             }
 
